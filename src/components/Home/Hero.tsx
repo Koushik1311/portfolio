@@ -6,9 +6,7 @@ import TypeWriter from "./TypeWriter";
 
 export default function Hero() {
   return (
-    <section className="mb-[8rem]">
-      {/* <h1 className="lg:hidden">Koushik</h1> */}
-
+    <section>
       {/* Intro */}
       <div className="flex flex-col items-center justify-center h-screen">
         {/* Image */}
@@ -28,14 +26,18 @@ export default function Hero() {
         />
 
         {/* Name */}
+        <p className="text-white">
+          Hi, <span className="text-[#F74C60]">I&apos;m </span>
+        </p>
         <h1 className="text-[2.25rem] font-bold text-white mb-[0.4rem]">
-          Koushik Roy
+          <span className="text-[#F74C60]">Koushik </span>Roy
         </h1>
 
         {/* TypeWriter */}
-        <div className="flex gap-1">
-          <p className="text-[1.125rem] text-white mb-[2.3rem]">I&apos;m a</p>
+        <div className="flex">
+          <span className="text-white">{"<"}</span>
           <TypeWriter />
+          <span> {"/>"}</span>
         </div>
 
         {/* Social Icons */}
