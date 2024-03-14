@@ -5,7 +5,7 @@ import SectionHeader from "../Shared/SectionHeader";
 
 export default function AboutMe() {
   return (
-    <section className="mt-[8rem] lg:w-[55rem] lg:mx-auto">
+    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto">
       <SectionHeader>About Me</SectionHeader>
       {/* Image */}
       <div className="md:flex flex-row md:relative">
