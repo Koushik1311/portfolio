@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Project() {
   return (
-    <section className="mt-[8rem] lg:w-[55rem] lg:mx-auto mb-[8rem]">
+    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto mb-[8rem]">
       <SectionHeader>My Projects</SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[1.75rem] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         {projectsData.map((project, index) => (
@@ -26,7 +26,7 @@ export default function Project() {
               {project.tags.map((tag, tagIndex) => (
                 <span
                   key={tagIndex}
-                  className="bg-[#F74C60]  rounded-full py-1 px-2 mr-2 mb-2 text-white text-[0.6rem] inline-block"
+                  className="bg-[#F74C60]  rounded-full py-1 px-2 mr-2 mb-2 text-white text-[0.9rem] inline-block"
                 >
                   {tag}
                 </span>

@@ -4,7 +4,7 @@ import { experiencesData } from "@/data/Experience/data";
 
 export default function Experience() {
   return (
-    <section className="mt-[8rem] lg:w-[55rem] lg:mx-auto">
+    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto">
       <SectionHeader>Experience</SectionHeader>
       <div className="relative rounded-3xl bg-[#302F4E] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         <div>
