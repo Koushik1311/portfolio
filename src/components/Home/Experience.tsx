@@ -4,7 +4,7 @@ import { experiencesData } from "@/data/Experience/data";
 
 export default function Experience() {
   return (
-    <section className="mt-[8rem]">
+    <section className="mt-[8rem] lg:w-[55rem] lg:mx-auto">
       <SectionHeader>Experience</SectionHeader>
       <div className="relative rounded-3xl bg-[#302F4E] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         <div>
@@ -22,7 +22,9 @@ export default function Experience() {
                   <p className="text-[#7A779E]">{experience.date}</p>
                   <h3 className="text-white">{experience.title}</h3>
                   <h4 className="text-[#7A779E]">{experience.location}</h4>
-                  <p className="text-white">{experience.description}</p>
+                  <p className="text-white pr-[1.3rem]">
+                    {experience.description}
+                  </p>
                 </div>
               </li>
             ))}
