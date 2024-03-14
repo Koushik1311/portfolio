@@ -9,7 +9,7 @@ export default function TypeWriter() {
       wrapper="span"
       cursor={true}
       // repeat={Infinity}
-      className="text-[1.125rem] text-[#F74C60] mb-[2.3rem]"
+      className="text-[1.125rem] text-white mb-[2.3rem]"
     />
   );
 }
