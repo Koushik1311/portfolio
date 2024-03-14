@@ -26,18 +26,16 @@ export default function Hero() {
         />
 
         {/* Name */}
-        <p className="text-white">
-          Hi, <span className="text-[#F74C60]">I&apos;m </span>
-        </p>
+        <p className="text-white">Hi, I&apos;m</p>
         <h1 className="text-[2.25rem] font-bold text-white mb-[0.4rem]">
-          <span className="text-[#F74C60]">Koushik </span>Roy
+          Koushik Roy
         </h1>
 
         {/* TypeWriter */}
         <div className="flex">
           <span className="text-white">{"<"}</span>
           <TypeWriter />
-          <span> {"/>"}</span>
+          <span className="text-white"> {"/>"}</span>
         </div>
 
         {/* Social Icons */}
