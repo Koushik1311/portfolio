@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function Project() {
   return (
-    <section className="mt-[8rem] mb-[8rem]">
+    <section className="mt-[8rem] lg:w-[55rem] lg:mx-auto mb-[8rem]">
       <SectionHeader>My Projects</SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[1.75rem] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         {projectsData.map((project, index) => (
-          <div className="bg-[#302F4E] rounded-md">
+          <div key={index} className="bg-[#302F4E] rounded-md">
             <Image
               src={project.imageUrl}
               width={400}
