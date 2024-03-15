@@ -19,10 +19,16 @@ export default function Experience() {
                   <experience.icon className="text-[#F74C60] text-[1.7rem]" />
                 </div>
                 <div className="ml-[2.4rem]">
-                  <p className="text-[#7A779E]">{experience.date}</p>
-                  <h3 className="text-white">{experience.title}</h3>
-                  <h4 className="text-[#7A779E]">{experience.location}</h4>
-                  <p className="text-white pr-[1.3rem]">
+                  <p className="text-[#7A779E] mb-[0.9rem] text-[0.81rem] lg:text-[1.1rem]">
+                    {experience.date}
+                  </p>
+                  <h3 className="text-white mr-[2rem] lg:mr-[5.4rem] mb-[0.3rem] text-[1rem] lg:text-[1.456rem] font-bold">
+                    {experience.title}
+                  </h3>
+                  <h4 className="text-[#7A779E] mb-[0.6rem] text-[0.77rem] lg:text-[1rem]">
+                    {experience.location}
+                  </h4>
+                  <p className="text-white mr-[2rem] lg:mr-[5.4rem] text-[0.9rem] lg:text-[1.25rem] font-light lg:font-normal">
                     {experience.description}
                   </p>
                 </div>
