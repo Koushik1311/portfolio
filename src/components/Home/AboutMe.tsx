@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { TbGridDots } from "react-icons/tb";
-import Btn from "../Shared/Btn";
 import SectionHeader from "../Shared/SectionHeader";
 
 export default function AboutMe() {
@@ -39,7 +37,11 @@ export default function AboutMe() {
             programming field.
           </p>
           <div className="flex justify-center mt-[1.5rem] pb-[2rem]">
-            <Btn goTo="/">Download CV</Btn>
+            <a href="/CV.pdf" target="_blank">
+              <button className="text-[1rem] lg:text-[1.267rem] font-bold text-white bg-[#F74C60] rounded-full px-[2.1rem] py-[0.49rem] lg:px-[2.5rem] lg:py-[0.76rem]">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
       </div>

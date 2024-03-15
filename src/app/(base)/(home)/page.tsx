@@ -1,5 +1,5 @@
 import AboutMe from "@/components/Home/AboutMe";
-import Experience from "@/components/Home/Experience";
+import Experiences from "@/components/Home/Experiences";
 import Hero from "@/components/Home/Hero";
 import Project from "@/components/Home/Project";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutMe />
 
       {/* Experience Section */}
-      <Experience />
+      <Experiences />
 
       {/* Project Section */}
       <Project />

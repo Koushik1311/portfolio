@@ -1,25 +1,34 @@
+"use client";
+
 import { links } from "@/data/Link/data";
-import { IoMenu } from "react-icons/io5";
+import { useState } from "react";
 
 export default function NavBar() {
+  const [showLinks, setShowLinks] = useState(false);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
-    <div className="absolute lg:fixed z-30 xl:ml-[3rem] xl:mt-[1.3rem]">
+    <div className="fixed z-30 xl:ml-[3rem] xl:mt-[1.3rem]">
       <div className="relative flex items-center mt-[0.3rem] ml-[0.7rem]">
-        <button className="mr-[0.6rem]">
-          <IoMenu className="text-white text-[2.5rem]" />
+        <button className="ml-[0.4rem]" onClick={toggleLinks}>
+          <p className="text-white text-[2rem] lg:text-[2.8rem] font-bold">
+            K<span className="text-[#F74C60]">.</span>
+          </p>
         </button>
-        <ul className="absolute flex flex-col top-[4.25rem] left-[0.25rem]">
-          {links.map((link, index) => (
-            <li key={index} className="mb-[1.4rem]">
-              <button>
-                <link.icon className="text-[#767599] text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className="text-white text-[2rem] font-bold">
-          K<span className="text-[#F74C60]">.</span>
-        </p>
+
+        {showLinks && (
+          <ul className="absolute flex flex-col top-[5rem] left-[0.25rem]">
+            {links.map((link, index) => (
+              <li key={index} className="mb-[1.4rem]">
+                <button>
+                  <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
