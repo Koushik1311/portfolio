@@ -36,14 +36,14 @@ export default function Hero() {
         </h1>
 
         {/* TypeWriter */}
-        <div className="flex items-center mb-[2.3rem]">
-          <span className="text-white text-[1.19rem] lg:text-[1.5rem]">
+        <div className="flex items-center justify-center mb-[2.3rem]">
+          <span className="text-white text-[1.3rem] lg:text-[1.5rem]">
             {"<"}
           </span>
           <div>
             <TypeWriter />
           </div>
-          <span className="text-white text-[1.19rem] lg:text-[1.5rem]">
+          <span className="text-white text-[1.3rem] lg:text-[1.5rem]">
             {" "}
             {"/>"}
           </span>
