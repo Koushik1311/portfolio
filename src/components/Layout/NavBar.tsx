@@ -1,6 +1,7 @@
 "use client";
 
 import { links } from "@/data/Link/data";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -18,17 +19,25 @@ export default function NavBar() {
           </p>
         </button>
 
-        {showLinks && (
-          <ul className="absolute flex flex-col top-[5rem] left-[0.25rem]">
-            {links.map((link, index) => (
-              <li key={index} className="mb-[1.4rem]">
-                <button>
-                  <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
+        <AnimatePresence>
+          {showLinks && (
+            <ul className="absolute flex flex-col top-[5rem] left-[0.25rem]">
+              {links.map((link, index) => (
+                <motion.li
+                  key={index}
+                  className="mb-[1.4rem]"
+                  initial={{ opacity: 0, y: -40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -40 }}
+                >
+                  <button>
+                    <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
+                  </button>
+                </motion.li>
+              ))}
+            </ul>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
