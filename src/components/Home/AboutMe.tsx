@@ -28,7 +28,7 @@ export default function AboutMe() {
         />
         <div className="w-[3rem] h-[3rem] bg-[#302F4E] block mx-auto rotate-45 mt-[2.2rem] -z-10 md:absolute md:left-[11.688rem]"></div>
         <div className="relative rounded-3xl bg-[#302F4E] mx-[1rem] -mt-[2.8rem] md:mt-[0.1rem] md:ml-[2.3rem] md:mr-[1.5rem]">
-          <p className="text-white px-[1.6rem] pt-[2rem] text-center z-10 md:text-left">
+          <p className="text-white text-[0.9rem] lg:text-[1.25rem] font-light lg:font-normal px-[1.6rem] pt-[2rem] text-center z-10 md:text-left">
             Dynamic and motivated Full Stack Web Developer. Passionate about
             crafting visually appealing and intuitive web applications.
             Committed to continuous learning and growth, I thrive in
