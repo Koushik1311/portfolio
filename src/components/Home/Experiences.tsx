@@ -4,7 +4,10 @@ import Experience from "./Experience";
 
 export default function Experiences() {
   return (
-    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto">
+    <section
+      className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto leading-6 scroll-mt-28"
+      id="experience"
+    >
       <SectionHeader>Experience</SectionHeader>
       <div className="relative rounded-3xl bg-[#302F4E] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         <div>
