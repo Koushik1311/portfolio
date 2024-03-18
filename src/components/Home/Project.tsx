@@ -5,7 +5,8 @@ import SectionHeader from "../Shared/SectionHeader";
 import { projectsData } from "@/data/Project/data";
 import { motion } from "framer-motion";
 import { CgWebsite } from "react-icons/cg";
-import { FaGithub } from "react-icons/fa";
+import { HiOutlineCodeBracket } from "react-icons/hi2";
+import { PiBracketsCurly } from "react-icons/pi";
 
 interface ProjectData {
   title: string;
@@ -60,15 +61,15 @@ export default function Project() {
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center">
           <div className="relative bg-[#302F4E] p-8 rounded-md">
             {/* Links */}
-            <div className="absolute right-[3rem] flex flex-row">
+            <div className="absolute flex flex-row right-[2.1rem] top-[2.5rem] md:right-[3rem] md:top-[2.5rem] lg:top-[2.7rem]">
               {selectedProject.projectlink && (
                 <a
                   href={selectedProject.projectlink}
                   target="_blank"
                   className="mr-[0.7rem]"
                 >
-                  <button className="flex items-center text-[1.2rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full px-[2.1rem] py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem]">
-                    <span className="mr-[0.6rem]">Live</span>
+                  <button className="flex items-center text-[0.9rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full p-[0.5rem] md:px-[2.1rem] md:py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem] hover:text-yellow-500 transition delay-75 duration-200 ease-in-out">
+                    <span className="mr-[0.6rem] hidden md:inline">Live</span>
                     <CgWebsite />
                   </button>
                 </a>
@@ -76,34 +77,54 @@ export default function Project() {
               {selectedProject.github?.frontend && (
                 <a
                   href={selectedProject.github?.frontend}
+                  target="_blank"
                   className="mr-[0.7rem]"
                 >
-                  <button className="flex items-center text-[1.2rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full px-[2.1rem] py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem]">
-                    <span className="mr-[0.6rem]">Frontend</span>
-                    <FaGithub />
+                  <button className="flex items-center text-[0.9rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full p-[0.5rem] md:px-[2.1rem] md:py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem] hover:text-yellow-500 transition delay-75 duration-200 ease-in-out">
+                    <span className="mr-[0.6rem] hidden md:inline">
+                      Frontend
+                    </span>
+                    <HiOutlineCodeBracket />
                   </button>
                 </a>
               )}
               {selectedProject.github?.backend && (
-                <a href={selectedProject.github?.backend}>
-                  <button className="flex items-center text-[1.2rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full px-[2.1rem] py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem]">
-                    <span className="mr-[0.6rem]">Backend</span>
-                    <FaGithub />
+                <a href={selectedProject.github?.backend} target="_blank">
+                  <button className="flex items-center text-[0.9rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full p-[0.5rem] md:px-[2.1rem] md:py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem] hover:text-yellow-500 transition delay-75 duration-200 ease-in-out">
+                    <span className="mr-[0.6rem] hidden md:inline">
+                      Backend
+                    </span>
+                    <PiBracketsCurly />
                   </button>
                 </a>
               )}
             </div>
             {/* Title */}
-            <h2 className="text-white lg:text-[2.9rem] font-semibold mb-4">
+            <h2 className="text-white text-[2rem] lg:text-[2.9rem] font-semibold mb-4">
               {selectedProject.title}
             </h2>
             {/* Description */}
-            <p className="text-white lg:text-[1.4rem] font-light lg:w-[55rem]">
+            <p className="text-white text-[0.9rem] lg:text-[1.4rem] font-light lg:w-[55rem]">
               {selectedProject.description}
             </p>
+            <div>
+              <p className="mt-[1.6rem] text-white text-[1.5rem] lg:text-[2rem] font-semibold">
+                Technologies Used
+              </p>
+              <ul className="mt-[0.8rem]">
+                {selectedProject.tags.map((tag, index) => (
+                  <li
+                    key={index}
+                    className="ml-[0.9rem] text-white text-[0.9rem] lg:text-[1.4rem]"
+                  >
+                    - {tag}
+                  </li>
+                ))}
+              </ul>
+            </div>
             {/* Close Button */}
             <button
-              className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="mt-[1.6rem] text-[0.8rem] lg:text-[1.2rem] text-white bg-[#F74C60] rounded-full px-[2.1rem] py-[0.49rem] lg:px-[2.2rem] lg:py-[0.56rem] hover:text-yellow-500 transition delay-75 duration-200 ease-in-out"
               onClick={closePopup}
             >
               Close
