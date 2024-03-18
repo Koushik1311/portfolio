@@ -7,7 +7,14 @@ export const projectsData = [
     projectlink: "https://verbaltrove.netlify.app/",
     description:
       "I created a full-stack dynamic web app from scratch, featuring a Random Quote Generator. Deployed on Cyclic & Netlify.",
-    tags: ["Vue.js", "Nuxt.js", "Nest.js", "PostgreSQL", "Tailwind", "Prisma"],
+    tags: [
+      "Vue.js",
+      "Nuxt.js",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Prisma ORM",
+    ],
     imageUrl: verbaltrove,
     github: {
       frontend: "https://github.com/Koushik1311/VerbalTroveFrontend",
@@ -17,8 +24,8 @@ export const projectsData = [
   {
     title: "TagSelector",
     description:
-      "I created a full-stack dynamic web app from scratch, featuring a Random Quote Generator. Deployed on Cyclic & Netlify.",
-    tags: ["Vue.js", "Nuxt.js", "Nest.js", "PostgreSQL", "Tailwind", "Prisma"],
+      "An interactive Tag Selector using Next.js. A dynamic tag selection feature.",
+    tags: ["Next.js", "Tailwind CSS", "react-hot-toast", "react-icons"],
     imageUrl: tagselector,
     github: {
       frontend:
