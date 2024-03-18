@@ -10,7 +10,7 @@ type SectionHeaderProps = {
 export default function SectionHeader({ children }: SectionHeaderProps) {
   return (
     <motion.div
-      className="relative mb-[3.6rem]"
+      className="relative mb-[3.6rem] -z-10"
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, duration: 0.5 }}

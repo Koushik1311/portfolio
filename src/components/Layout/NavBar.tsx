@@ -1,13 +1,21 @@
 "use client";
 
+import React, { useState } from "react";
 import { links } from "@/data/Link/data";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
 
 export default function NavBar() {
   const [showLinks, setShowLinks] = useState(false);
   const toggleLinks = () => {
     setShowLinks(!showLinks);
+  };
+
+  const scrollToSection = (hash: string) => {
+    const section = document.querySelector(hash);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setShowLinks(false);
   };
 
   return (
@@ -30,7 +38,7 @@ export default function NavBar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -40 }}
                 >
-                  <button>
+                  <button onClick={() => scrollToSection(link.hash)}>
                     <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
                   </button>
                 </motion.li>

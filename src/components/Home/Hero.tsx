@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import Btn from "../Shared/Btn";
 import { socialLinks } from "@/data/Social/data";
 import TypeWriter from "./TypeWriter";
+import ContactButton from "../Shared/ContactBtn";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="home">
       {/* Intro */}
       <div className="flex flex-col items-center justify-center h-screen">
         {/* Image */}
@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
 
         {/* Button */}
-        <Btn goTo="#">Hire me</Btn>
+        <ContactButton />
       </div>
 
       {/* TODO: Use Fremare Motion to create a bounce animation */}
