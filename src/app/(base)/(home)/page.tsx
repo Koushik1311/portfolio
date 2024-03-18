@@ -1,4 +1,5 @@
 import AboutMe from "@/components/Home/AboutMe";
+import ContactMe from "@/components/Home/ContactMe";
 import Experiences from "@/components/Home/Experiences";
 import Hero from "@/components/Home/Hero";
 import Project from "@/components/Home/Project";
@@ -19,6 +20,7 @@ export default function Home() {
       <Project />
 
       {/* Get in Touch Section */}
+      <ContactMe />
     </main>
   );
 }
