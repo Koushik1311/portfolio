@@ -36,7 +36,7 @@ export default function Project() {
   };
 
   return (
-    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto mb-[8rem]">
+    <section className="mt-[8rem] lg:w-[55rem] xl:w-[65rem] lg:mx-auto">
       <SectionHeader>My Projects</SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[1.75rem] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         {projectsData.map((project, index) => (
