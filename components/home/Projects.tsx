@@ -11,7 +11,7 @@ export default function Projects() {
         {ProjectsData.map((project, index) => (
           <li
             key={index}
-            className="text-xl font-medium flex items-center gap-[14px]"
+            className="text-xl font-medium flex items-center flex-wrap gap-[14px]"
           >
             <Dash />
             <Link
