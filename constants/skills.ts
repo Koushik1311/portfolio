@@ -1,13 +1,19 @@
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
+  RiNextjsFill,
+  RiSupabaseFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
+import {
+  SiCloudinary,
   SiExpress,
   SiFramer,
+  SiMongodb,
   SiNestjs,
   SiRedux,
   SiShadcnui,
 } from "react-icons/si";
 import { IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 
 export const SkillsData = [
@@ -38,6 +44,23 @@ export const SkillsData = [
   {
     skill: "Nest.js",
     icon: SiNestjs,
+  },
+  {
+    skill: "Supabase",
+    icon: RiSupabaseFill,
+  },
+
+  {
+    skill: "MongoDB",
+    icon: SiMongodb,
+  },
+  {
+    skill: "PostgreSQL",
+    icon: BiLogoPostgresql,
+  },
+  {
+    skill: "Cloudinary",
+    icon: SiCloudinary,
   },
 
   // Auxi
