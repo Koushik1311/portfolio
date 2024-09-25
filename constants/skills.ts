@@ -59,7 +59,6 @@ export const SkillsData = [
     skill: "PostgreSQL",
     icon: BiLogoPostgresql,
   },
-
   {
     skill: "Cloudinary",
     icon: SiCloudinary,
