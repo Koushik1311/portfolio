@@ -9,6 +9,7 @@ import {
   SiFramer,
   SiMongodb,
   SiNestjs,
+  SiPrisma,
   SiRedux,
   SiShadcnui,
 } from "react-icons/si";

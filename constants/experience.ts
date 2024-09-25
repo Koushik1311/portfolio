@@ -4,7 +4,7 @@ export const ExperienceData = [
     id: "zidio-web-developer-intern",
     title: "Web Developer Intern",
     company: "Zidio Development",
-    location: "India, Kolkata (Remote)",
+    location: "Remote",
     status: "Active",
     description: [
       "Developed a Certificate Verification System using the MERN stack (MongoDB, Express.js, React, and Node.js) to streamline certificate management and retrieval for students.",
@@ -52,7 +52,7 @@ export const ExperienceData = [
     id: "mentorsity-web-developer-intern2",
     title: "Web Developer Intern",
     company: "Mentorsity",
-    location: "India, Kolkata (Remote)",
+    location: "Remote",
     status: "Inactive",
     description: [
       "Worked on the official Mentorsity website (mentorsity.com).",
@@ -78,7 +78,7 @@ export const ExperienceData = [
     id: "mentorsity-web-developer-intern",
     title: "Web Developer Intern",
     company: "Mentorsity",
-    location: "India, Kolkata (Remote)",
+    location: "Remote",
     status: "Inactive",
     description: [
       "Developed React components with SSR, enhancing user experience and performance.",
