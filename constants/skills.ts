@@ -9,6 +9,7 @@ import {
   SiFramer,
   SiMongodb,
   SiNestjs,
+  SiPrisma,
   SiRedux,
   SiShadcnui,
 } from "react-icons/si";
@@ -57,6 +58,10 @@ export const SkillsData = [
   {
     skill: "PostgreSQL",
     icon: BiLogoPostgresql,
+  },
+  {
+    skill: "Prisma ORM",
+    icon: SiPrisma,
   },
   {
     skill: "Cloudinary",
