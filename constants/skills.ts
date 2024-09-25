@@ -85,4 +85,8 @@ export const SkillsData = [
     skill: "react-hot-toast",
     icon: IoIosNotificationsOutline,
   },
+  {
+    skill: "Prisma ORM",
+    icon: SiPrisma,
+  },
 ];
