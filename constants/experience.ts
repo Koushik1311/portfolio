@@ -5,7 +5,7 @@ export const ExperienceData = [
     title: "Web Developer Intern",
     company: "Zidio Development",
     location: "Remote",
-    status: "Inactive",
+    status: "Active",
     description: [
       "Developed a Certificate Verification System using the MERN stack (MongoDB, Express.js, React, and Node.js) to streamline certificate management and retrieval for students.",
       "Implemented authentication with JWT, including access and refresh tokens. Created middleware for verifying JWT and handling file uploads with Multer.",
