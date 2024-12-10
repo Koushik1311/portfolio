@@ -90,7 +90,7 @@ export default function ProjectPage({
             <span className="text-[#D79921]">## </span>
             Tech Stack
           </h5>
-          <ul className="list-none pl-5 mt-2 grid grid-cols-5">
+          <ul className="list-none pl-5 mt-2 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
             {project.techStack.map((tech, index) => (
               <li
                 key={index}
