@@ -10,7 +10,6 @@ export const ProjectsData = [
     tags: ["Published", "AI", "Indie Project"],
     description:
       "UnoriaVerse is a quote-based emotional support app powered by AI. It uses real-time mood detection and contextual emotional feedback to provide comforting, inspiring, or thoughtful messages tailored to your current state.",
-    // specialNote: "",
     why: "The goal was to explore how AI can provide gentle, human-like emotional support in a lightweight and accessible way — especially for indie creators and individuals going through tough days.",
     cando: [
       "Detect user mood via prompt",
