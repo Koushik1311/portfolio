@@ -19,7 +19,7 @@ export default function Skills() {
           </li>
         ))}
       </ul>
-      <ul className="mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
+      {/* <ul className="mt-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2">
         {Web3SkillsData.map((skill, index) => (
           <li
             key={index}
@@ -31,7 +31,7 @@ export default function Skills() {
             {skill.skill}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }
