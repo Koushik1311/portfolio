@@ -1,4 +1,50 @@
 export const ExperienceData = [
+  // 5th
+  {
+    id: "freelance-ecommerce-dev",
+    title: "Full Stack Developer",
+    company: "Freelance",
+    location: "Remote",
+    status: "Active",
+    description: [
+      "Working on an e-commerce platform as a full stack developer for a freelance client.",
+    ],
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "CLerk",
+      "Vercel",
+      "TypeScript",
+    ],
+    startingDate: "April 2025",
+    endingDate: "Present",
+  },
+  // 4th
+  {
+    id: "soccal-frontend-developer",
+    title: "Frontend Developer",
+    company: "Soccal",
+    location: "Remote",
+    status: "Inactive",
+    description: [
+      "Worked with a startup to build and deliver their MVP using React and modern frontend tooling.",
+      "Implemented the full UI and integrated APIs for authentication, content loading, and user interaction.",
+      "Ensured responsiveness, fast load times, and component reusability to improve UX.",
+      "Contributed to early-stage development strategies and helped launch soccal.in.",
+    ],
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Axios",
+      "Git",
+      "TypeScript",
+    ],
+    startingDate: "January 2025",
+    endingDate: "April 2025",
+  },
   // 3rd
   {
     id: "zidio-web-developer-intern",

@@ -13,7 +13,7 @@ export default function Intro() {
       />
       <h1 className="text-[40px] font-bold text-[#D79921]">Koushik Roy</h1>
       <p className="text- font-bold text-[#D28280]">
-        Full Stack Developer | Indie Maker | Web3 Learner
+        Full Stack Developer | Indie Maker
       </p>
     </div>
   );
