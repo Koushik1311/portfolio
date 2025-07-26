@@ -61,6 +61,12 @@ export default function ProjectPage({
           {/* <SectionHeader>## Description</SectionHeader> */}
           <p className="list-none mt-2">{project.description}</p>
 
+          {project.specialNote && (
+            <div className="bg-yellow-50 p-3 mt-6 rounded-md border border-yellow-300 text-yellow-800 text-sm">
+              <strong>Note:</strong> {project.specialNote}
+            </div>
+          )}
+
           {/* Why */}
           <h2 className="text-xl font-extrabold mt-6">
             <span className="text-[#D79921]">## </span>
